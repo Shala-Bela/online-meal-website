@@ -1,0 +1,228 @@
+
+#image{
+    width:150px;
+    height:90px;
+    margin: 1px 3px;
+}
+
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#bar{
+    display: flex;
+    align-items: center;
+    position:relative;
+    top:0px
+    /* justify-content: center; */
+}
+
+#logo{
+    margin: -10px 20px;
+}
+
+#bar ul{
+    display: flex;
+}
+
+#bar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+
+
+#bar ul li{
+    list-style:none;
+    font-size: 20px;
+    /* padding: 2px; */
+}
+
+#bar ul li a{
+    display: block;
+    padding: 30px 30px;
+    font-size: 30px;
+    text-decoration: none;
+    color:black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#bar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home::before{
+    content: "";
+    background-image: url(https://i.pinimg.com/originals/33/ef/8b/33ef8b9c0b902154a6cd4103a21275ef.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.69;
+
+}
+
+#Home h1{
+    color:black;
+    text-align: center;
+}
+
+#Home p{
+    color:black;
+    text-align: center;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,bold;
+    line-height: 40px;
+}
+
+.primary{
+    font-size: 60px;
+    padding: 30px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color:royalblue;
+    color: white;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+.h-primary{
+    font-size: 40px;
+}
+.h-secondary{
+    font-size: 25px;
+    margin:12px;
+    font-family: 'Bree Serif',serif;
+
+}
+
+#services{
+    display: flex;
+    margin: 30px;
+
+
+}
+
+#services .box{
+    border: 3px solid black;
+    padding: 20px;
+    margin:12px;
+    border-radius: 23px;
+    background-color:cornsilk;
+   
+}
+
+#services .box img{
+    height: 200px;
+    display: block;
+    margin:auto;
+    width: 250px;
+    border: 5px solid black;
+    border-radius: 5px;
+  
+    /* width:300px   */
+}
+
+#services .box p{
+    font-size: 16px;
+    font-family:  'Bree Serif',serif;
+}
+
+#client-section{
+    height:344px;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-items{
+    padding: 10px;
+}
+#clients img{
+    width: 140px;
+    height:140px;
+    padding:50px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(https://t4.ftcdn.net/jpg/04/41/05/23/360_F_441052304_xqszd9uBMcbW8dS3WD1JolMbztuF2KNx.jpg);
+    width: 100%;
+    height:60%;
+    z-index: -3;
+    opacity: 0.3;
+    background-size: cover;
+}
+
+#Contact{
+    position: relative;
+}
+
+#Contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.6;
+    background: url(https://wallpaperaccess.com/full/3124512.jpg);
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 4px 30px;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.Input{
+    width:100%;
+    padding: 15px;
+    border: 2px solid black;
+    font-size: 15px;
+}
+
+#heading{
+    text-align: center;
+}
